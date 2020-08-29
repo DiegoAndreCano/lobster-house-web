@@ -5,7 +5,7 @@ body {
   background-color: #730202;
 }
 #banner {
-  background-image: url(img/Fachada_restaurante_2.jpg);
+  background-image: url(/img/Fachada_restaurante_2.jpg);
   background-color: #730202;
   height: 100vh;
   position: relative;
@@ -15,18 +15,18 @@ body {
   display: flex;
 }
 #banner.banner-menu {
-  background-image: url(img/Botellas.JPG);
+  background-image: url(/img/Botellas.JPG);
   height: 50vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: unset;
 }
 #banner.banner-gallery {
-  background-image: url(img/Fachada_comedor_atras.JPG);
+  background-image: url(/img/Fachada_comedor_atras.JPG);
   height: 50vh;
 }
 #banner.banner-info {
-  background-image: url(img/Fachada_restaurante_2.jpg);
+  background-image: url(/img/Fachada_restaurante_2.jpg);
   height: 50vh;
 }
 .navbar {
