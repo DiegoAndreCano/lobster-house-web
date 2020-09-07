@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,39 +14,40 @@
 </head>
 
 <body>
-    <div id="banner" class="banner-info">
+    <div id="banner">
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-            <a id="bandera" href="info-es.html"><img src="img/icons8-mexico-48.png" class="img-fluid d-none d-sm-block"
-                    title="Version en español" alt="Version en español"></a>
-            <a href="index.html" class="navbar-brand d-block d-sm-none">Lobster House</a>
-            <a href="index.html" class="navbar-brand hvr-glow d-none d-sm-block">Lobster House Grill</a>
+            <a id="bandera" href="info.html"><img src="img/icons8-usa-48.png" class="img-fluid d-none d-sm-block"
+                    title="English version" alt="English version"></a>
+            <a href="indice.html" class="navbar-brand d-block d-sm-none">Lobster House</a>
+            <a href="indice.html" class="navbar-brand hvr-glow d-none d-sm-block">Lobster House Grill</a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto d-flex align-items-center">
-                    <li class="nav-item w-100">
-                        <a class="nav-link text-center" href="index.html">About Us</a>
-                    </li>
-                    <li class="nav-item w-100">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item w-100">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
                     <li class="nav-item active w-100">
-                        <a class="nav-link" href="#">Info<span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-center" href="indice.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="menu-es.html">Menú</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="#">Info<span class="sr-only">(actual)</span></a>
                     </li>
                     <li class="nav-item d-sm-none w-100">
-                        <a class="nav-link" href="info-es.html">Version en español <img src="img/icons8-mexico-48.png"
+                        <a class="nav-link" href="info.html">English version <img src="img/icons8-usa-48.png"
                                 height="30px" class="mb-2" alt="Version en español"></a>
                     </li>
                 </ul>
             </div>
         </nav>
+
         <span id="open">
-            <h4>Open every night: <br class="d-block d-sm-none"> 5:30pm to 10:30pm</h4>
+            <h4>Abierto cada noche: <br class="d-block d-sm-none"> 5:30pm to 10:30pm</h4>
         </span>
         <div id="TA_certificateOfExcellence371" class="TA_certificateOfExcellence align-self-end mr-3"
             style="position: absolute; right: 0;">
@@ -61,17 +62,17 @@
             src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=371&amp;locationId=1032416&amp;lang=es_MX&amp;year=2020&amp;display_version=2"
             data-loadtrk onload="this.loadtrk=true"></script> -->
     </div>
+
     <div class="container-fluid pt-5">
         <div class="row">
             <div class="col-lg-12 col-xl">
-                <h3 class="text-light">Payment methods:</h3>
-                <p class="text-light">We accept cash in pesos and dollars, for credit and debit card use the
-                    following buttons after you had your dinner.</p>
-                <span class="mt-5 text-light">Enter the amount below:</span><br>
+                <h3 class="text-light">Formas de pago:</h3>
+                <p class="text-light">Para pagos con tarjetas de crédito o débito usar los siguientes botones</p>
+                <span class="mt-5 text-light">Ingresa la cantidad:</span><br>
                 <input type="number" id="cantidad" class="mb-2">
                 <div id="paypal-button-container"></div>
                 <script
-                    src="https://www.paypal.com/sdk/js?client-id=ASIY5h5nptM49_Z0oV120Xs6CvWHgt087NCgrw8ir_8P_K8rW-y5apJnMUCQgpCJp22jdR6ljytIBeLt&currency=USD"
+                    src="https://www.paypal.com/sdk/js?client-id=ASIY5h5nptM49_Z0oV120Xs6CvWHgt087NCgrw8ir_8P_K8rW-y5apJnMUCQgpCJp22jdR6ljytIBeLt&currency=MXN"
                     data-sdk-integration-source="button-factory"></script>
                 <script>
                     var precio = document.getElementById("cantidad").value;
@@ -93,63 +94,64 @@
                         },
                         onApprove: function (data, actions) {
                             return actions.order.capture().then(function (details) {
-                                alert('Transaction completed by: ' + details.payer.name.given_name + '!');
+                                alert('Pago realizado exitosamente por: ' + details.payer.name.given_name + '!');
                             });
                         }
                     }).render('#paypal-button-container');
                 </script>
             </div>
             <div class="col-auto mx-auto">
-                <div id="TA_selfserveprop735" class="TA_selfserveprop mb-3 d-none d-sm-block">
-                    <ul id="NDGwHCtr6hA" class="TA_links A2e0bJ7N51">
-                        <li id="FU3KfVcoy5" class="Mifx1nhwGB"><a target="_blank"
-                                href="https://www.tripadvisor.com/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
-                                    src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-11900-2.svg"
+                <div id="TA_selfserveprop28" class="TA_selfserveprop mb-3 d-none d-sm-block">
+                    <ul id="qZBspTjd32Eg" class="TA_links NdVppd">
+                        <li id="uA8COvTH" class="sbAMPSxQT"><a target="_blank"
+                                href="https://www.tripadvisor.com.mx/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
+                                    src="https://www.tripadvisor.com.mx/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-11900-2.svg"
                                     alt="TripAdvisor" /></a></li>
                     </ul>
                 </div>
                 <script async
-                    src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=735&amp;locationId=1032416&amp;lang=en_US&amp;rating=true&amp;nreviews=4&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=false&amp;display_version=2"
+                    src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=28&amp;locationId=1032416&amp;lang=es_MX&amp;rating=true&amp;nreviews=4&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
 
-                <div id="TA_selfserveprop471" class="TA_selfserveprop mb-3 d-block d-sm-none">
-                    <ul id="b5e6Lz9" class="TA_links 6d9PQdEwRoc">
-                        <li id="TgNvDsme" class="5otX7CUnnlnE"><a target="_blank"
-                                href="https://www.tripadvisor.com/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
-                                    src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-11900-2.svg"
+                <div id="TA_selfserveprop276" class="TA_selfserveprop mb-3 d-block d-sm-none">
+                    <ul id="bcMx6Ofuz1" class="TA_links 0PCXcIupen">
+                        <li id="6bWyI0b" class="6nxmGDkT"><a target="_blank"
+                                href="https://www.tripadvisor.com.mx/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
+                                    src="https://www.tripadvisor.com.mx/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-11900-2.svg"
                                     alt="TripAdvisor" /></a></li>
                     </ul>
                 </div>
                 <script async
-                    src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=471&amp;locationId=1032416&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=false&amp;display_version=2"
+                    src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=276&amp;locationId=1032416&amp;lang=es_MX&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
             </div>
             <div class="col-auto mx-auto">
                 <script async
                     src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=215&amp;locationId=1032416&amp;lang=en_US&amp;rating=true&amp;nreviews=4&amp;writereviewlink=false&amp;popIdx=false&amp;iswide=true&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
-                <div id="TA_cdswritereviewlg503" class="TA_cdswritereviewlg mb-3">
-                    <ul id="1CCQLeW" class="TA_links dfzB61ka5VF">
-                        <li id="5QOJsQM2" class="HfXU3c"><a target="_blank"
-                                href="https://www.tripadvisor.com/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
+                <div id="TA_cdswritereviewlg683" class="TA_cdswritereviewlg mb-3">
+                    <ul id="B9wFbKn" class="TA_links KntR5NFTARw">
+                        <li id="4VC6HL90wAGx" class="jqcNlC"><a target="_blank"
+                                href="https://www.tripadvisor.com.mx/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
                                     src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
                                     alt="TripAdvisor" /></a></li>
                     </ul>
                 </div>
                 <script async
-                    src="https://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=503&amp;locationId=1032416&amp;lang=en_US&amp;lang=en_US&amp;display_version=2"
+                    src="https://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=683&amp;locationId=1032416&amp;lang=es_MX&amp;lang=es_MX&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
             </div>
         </div>
     </div>
+
     <div class="card bg-dark px-4">
         <div class="card-body">
             <div class="row p-auto justify-content-around">
                 <div class="col-xs-12 col-sm-auto text-center text-sm-left order-first mb-3">
-                    <h5 class="text-muted">Address:</h5>
+                    <h5 class="text-muted">Dirección:</h5>
                     <div><a style="font-size: .9em;" target="_blank" href="https://goo.gl/maps/WENThJuEe5CFPSJK7">Zona
                             Hotelera Norte k.m 4.5
-                            <br> Across The Westin Cozumel <br>Next to the Key Lime Pie Factory</a></div>
+                            <br> Frente el hotel Westin Cozumel <br>Junto al Key Lime Pie Factory</a></div>
                 </div>
                 <div class="col-xs-12 col-lg-5 order-xs-2 order-sm-last order-lg-2 iframe-rwd">
                     <iframe
