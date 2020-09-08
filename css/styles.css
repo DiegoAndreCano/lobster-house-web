@@ -19,8 +19,14 @@ body {
   top: 0;
   right: 0;
   margin-right: 10px;
+  margin-top: -3px;
   height: 2em;
   width: 2em;
+}
+#bandera-texto {
+  position: absolute;
+  top: 0;
+  right: 50px;
 }
 #bandera:hover {
   height: 2.3em;
