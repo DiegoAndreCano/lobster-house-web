@@ -5,12 +5,12 @@ body {
   background-color: #730202;
 }
 #banner {
-  background-image: url(../img/Fachada_restaurante_2.jpg);
+  background-image: url(../img/Fachada-restaurante-2.jpg);
   background-color: #730202;
   height: 100vh;
   position: relative;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   display: flex;
 }
@@ -33,17 +33,8 @@ body {
   width: 2.3em;
   transition: 0.1s;
 }
-#banner.banner-menu {
-  background-image: url(../img/Botellas.JPG);
-  height: 50vh;
-}
-#banner.banner-gallery {
-  background-image: url(../img/Fachada_comedor_atras.JPG);
-  height: 50vh;
-}
-#banner.banner-info {
-  background-image: url(../img/Fachada_restaurante_2.jpg);
-  height: 50vh;
+#banner.banner-medio {
+  height: 30vh;
 }
 .navbar {
   transition: 0.7s;
@@ -100,9 +91,6 @@ nav .navbar-nav li a {
 #TA_certificateOfExcellence371 ul {
   list-style-type: none;
 }
-/* h2 {
-  font-family: "Bitter", serif;
-} */
 h4 {
   all: unset;
 }
@@ -291,7 +279,6 @@ div.col hr.style14 {
   #open {
     font-size: 40px;
   }
-
   .menu-text div li,
   .menu-text div span,
   .menu-text-s div li,
@@ -361,7 +348,6 @@ div.col hr.style14 {
   }
   .container-menu {
     padding: 0px 15px;
-    overflow: hidden;
   }
   .prices {
     padding: 0px !important;
@@ -374,19 +360,16 @@ div.col hr.style14 {
     height: 45px;
   }
 }
-
-@media (max-width: 435px) {
+@media (max-width: 520px) {
   #banner,
-  #banner.banner-menu,
-  #banner.banner-gallery,
-  #banner.banner-info {
+  #banner.banner-medio {
     height: 100vw;
     background-image: url(../img/fachada-movil.jpg);
     background-size: contain;
-    background-position: top;
+    background-position: 100% -15%;
+    background-repeat: no-repeat;
   }
 }
-
 @media (max-width: 400px) {
   a.navbar-brand {
     font-size: 7.5vw;
