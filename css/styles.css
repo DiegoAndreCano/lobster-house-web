@@ -87,6 +87,7 @@ nav .navbar-nav li a {
 .navbar button {
   margin-right: 20px;
   background-color: black;
+  border-color: white !important;
 }
 #TA_certificateOfExcellence371 ul {
   list-style-type: none;
