@@ -100,9 +100,6 @@ nav .navbar-nav li a {
 #TA_certificateOfExcellence371 ul {
   list-style-type: none;
 }
-/* h2 {
-  font-family: "Bitter", serif;
-} */
 h4 {
   all: unset;
 }
@@ -221,6 +218,10 @@ div.col hr.style14 {
   padding: 0;
   height: 120px;
   width: 100%;
+}
+.container-menu {
+  padding: 0px 15px;
+  overflow: hidden;
 }
 /******************* Larger devices (desktops, 1200px and up) *******************/
 @media (min-width: 1200px) {
@@ -358,10 +359,6 @@ div.col hr.style14 {
   }
   #descripcion {
     font-size: 14px !important;
-  }
-  .container-menu {
-    padding: 0px 15px;
-    overflow: hidden;
   }
   .prices {
     padding: 0px !important;
