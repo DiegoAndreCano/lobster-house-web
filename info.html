@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Caveat&family=Poiret+One&display=swap"
         rel="stylesheet">
@@ -62,14 +64,77 @@
             src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=371&amp;locationId=1032416&amp;lang=es_MX&amp;year=2020&amp;display_version=2"
             data-loadtrk onload="this.loadtrk=true"></script> -->
     </div>
-    <div class="container-fluid pt-5">
+    <div id="info" class="container-fluid pt-5">
         <div class="row">
-            <div class="col-lg-12 col-xl">
+            <div class="col-12 col-md-6 mb-4">
+                <h2 class="text-light">Contact Us:</h2>
+                <p class="text-light">There is no need for reservations, they are only recommended for larger groups.
+                    <br class="d-none d-xl-block"> <small>(6+ people)</small></p>
+                <p class="text-light">Phone number: <a class="text-light" href="tel:+52987-564-8995"><b>987 564
+                            8995</b></a>
+                </p>
+                <div id="container" class="ltr">
+                    <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off"
+                        enctype="multipart/form-data" method="post" novalidate
+                        action="https://diegoandre.wufoo.com/forms/z1qrkprk11hh8wh/#public">
+
+                        <header id="header" class="info">
+                            <h2 class="0">Comments and reservations:</h2>
+                            <div class="0"></div>
+                        </header>
+                        <ul>
+                            <li id="foli3" class="notranslate      ">
+                                <label class="desc" id="title3">
+                                    Name:
+                                    <span id="req_3" class="req">*</span>
+                                </label>
+                                <span>
+                                    <input id="Field3" name="Field3" type="text" class="field text fn" value="" size="8"
+                                        tabindex="0" placeholder="" required />
+                                    <label for="Field3">First</label>
+                                </span>
+                                <span>
+                                    <input id="Field4" name="Field4" type="text" class="field text ln" value=""
+                                        size="14" tabindex="0" placeholder="" required />
+                                    <label for="Field4">Last</label>
+                                </span>
+                            </li>
+                            <li id="foli5" class="notranslate      "><label class="desc" id="title5" for="Field5">
+                                    Message:
+                                    <span id="req_5" class="req">*</span>
+                                </label>
+
+                                <div>
+                                    <textarea id="Field5" name="Field5" class="field textarea small" spellcheck="true"
+                                        rows="10" cols="50" tabindex="0" onkeyup="" placeholder="" required></textarea>
+
+                                </div>
+                            </li>
+                            <li class="buttons ">
+                                <div>
+
+                                    <input id="saveForm" name="saveForm" class="btTxt submit" type="submit"
+                                        value="Submit" />
+                                </div>
+                            </li>
+
+                            <li class="hide">
+                                <label for="comment">Do Not Fill This Out</label>
+                                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                                <input type="hidden" id="idstamp" name="idstamp"
+                                    value="mkKqKoUNxIhLMAWGORcwS8QZd5cb+O0q57To1QW4nb8=" />
+                                <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 align-self-center">
                 <h3 class="text-light">Payment methods:</h3>
                 <p class="text-light">We accept cash in pesos and dollars, for credit and debit card use the
                     following buttons after you had your dinner.</p>
                 <span class="mt-5 text-light">Enter the amount below:</span><br>
-                <input type="number" id="cantidad" class="mb-2">
+                <input placeholder="Enter amount in USD" type="number" id="cantidad" class="mb-2">
                 <div id="paypal-button-container"></div>
                 <script
                     src="https://www.paypal.com/sdk/js?client-id=ASIY5h5nptM49_Z0oV120Xs6CvWHgt087NCgrw8ir_8P_K8rW-y5apJnMUCQgpCJp22jdR6ljytIBeLt&currency=USD"
@@ -100,8 +165,11 @@
                     }).render('#paypal-button-container');
                 </script>
             </div>
+        </div>
+        <div class="row my-3">
             <div class="col-auto mx-auto">
-                <div id="TA_selfserveprop735" class="TA_selfserveprop mb-3 d-none d-sm-block">
+                <h3 id="rev-h3" class="text-light">Reviews:</h3>
+                <div id="TA_selfserveprop735" class="TA_selfserveprop mb-3 d-none d-md-block">
                     <ul id="NDGwHCtr6hA" class="TA_links A2e0bJ7N51">
                         <li id="FU3KfVcoy5" class="Mifx1nhwGB"><a target="_blank"
                                 href="https://www.tripadvisor.com/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
@@ -113,7 +181,7 @@
                     src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=735&amp;locationId=1032416&amp;lang=en_US&amp;rating=true&amp;nreviews=4&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
 
-                <div id="TA_selfserveprop471" class="TA_selfserveprop mb-3 d-block d-sm-none">
+                <div id="TA_selfserveprop471" class="TA_selfserveprop mb-3 d-block d-md-none">
                     <ul id="b5e6Lz9" class="TA_links 6d9PQdEwRoc">
                         <li id="TgNvDsme" class="5otX7CUnnlnE"><a target="_blank"
                                 href="https://www.tripadvisor.com/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
@@ -125,7 +193,8 @@
                     src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=471&amp;locationId=1032416&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
             </div>
-            <div class="col-auto mx-auto">
+            <div class="col-auto mx-auto order-lg-first">
+                <h3 id="rev-h3" class="text-light">Leave your review!</h3>
                 <script defer
                     src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=215&amp;locationId=1032416&amp;lang=en_US&amp;rating=true&amp;nreviews=4&amp;writereviewlink=false&amp;popIdx=false&amp;iswide=true&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>

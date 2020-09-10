@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Caveat&family=Poiret+One&display=swap"
         rel="stylesheet">
@@ -15,7 +17,7 @@
 
 <body>
     <div id="banner" class="banner-medio">
-        <nav class=" navbar navbar-expand-sm navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
             <span id="bandera-texto" class="text-white d-none d-sm-block">English:</span>
             <a id="bandera" href="info.html"><img src="img/icons8-usa-48.png" class="img-fluid d-none d-sm-block"
                     title="English version" alt="English version"></a>
@@ -31,7 +33,7 @@
                         <a class="nav-link text-center" href="indice.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item w-100">
-                        <a class="nav-link" href="menu-es.html">Menú</a>
+                        <a class="nav-link" href="menu-es.html">Mení</a>
                     </li>
                     <li class="nav-item w-100">
                         <a class="nav-link" href="galeria.html">Galería</a>
@@ -40,13 +42,12 @@
                         <a class="nav-link" href="#">Info<span class="sr-only">(actual)</span></a>
                     </li>
                     <li class="nav-item d-sm-none w-100">
-                        <a class="nav-link" href="info.html">English version <img src="img/icons8-usa-48.png"
+                        <a class="nav-link" href="info.html">English version <img src="img/icons8-mexico-48.png"
                                 height="30px" class="mb-2" alt="Version en español"></a>
                     </li>
                 </ul>
             </div>
         </nav>
-
         <span id="open">
             <h4>Abierto cada noche: <br class="d-block d-sm-none"> 5:30pm to 10:30pm</h4>
         </span>
@@ -63,17 +64,79 @@
             src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=371&amp;locationId=1032416&amp;lang=es_MX&amp;year=2020&amp;display_version=2"
             data-loadtrk onload="this.loadtrk=true"></script> -->
     </div>
-
-    <div class="container-fluid pt-5">
+    <div id="info" class="container-fluid pt-5">
         <div class="row">
-            <div class="col-lg-12 col-xl">
+            <div class="col-12 col-md-6 mb-4">
+                <h2 class="text-light">Contacto:</h2>
+                <p class="text-light">No se requieren reservaciones, solo se sugieren para grupos grandes.
+                    <br class="d-none d-xl-block"> <small>(6+ personas)</small></p>
+                <p class="text-light">Numero de teléfono: <a class="text-light" href="tel:+52987-564-8995"><b>987 564
+                            8995</b></a>
+                </p>
+                <div id="container" class="ltr">
+                    <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off"
+                        enctype="multipart/form-data" method="post" novalidate
+                        action="https://diegoandre.wufoo.com/forms/z1qrkprk11hh8wh/#public">
+
+                        <header id="header" class="info">
+                            <h2 class="0">Comentarios y reservaciones:</h2>
+                            <div class="0"></div>
+                        </header>
+                        <ul>
+                            <li id="foli3" class="notranslate      ">
+                                <label class="desc" id="title3">
+                                    Nombre:
+                                    <span id="req_3" class="req">*</span>
+                                </label>
+                                <span>
+                                    <input id="Field3" name="Field3" type="text" class="field text fn" value="" size="8"
+                                        tabindex="0" placeholder="" required />
+                                    <label for="Field3">Nombre(s)</label>
+                                </span>
+                                <span>
+                                    <input id="Field4" name="Field4" type="text" class="field text ln" value=""
+                                        size="14" tabindex="0" placeholder="" required />
+                                    <label for="Field4">Apellido(s)</label>
+                                </span>
+                            </li>
+                            <li id="foli5" class="notranslate      "><label class="desc" id="title5" for="Field5">
+                                    Mensaje:
+                                    <span id="req_5" class="req">*</span>
+                                </label>
+
+                                <div>
+                                    <textarea id="Field5" name="Field5" class="field textarea small" spellcheck="true"
+                                        rows="10" cols="50" tabindex="0" onkeyup="" placeholder="" required></textarea>
+
+                                </div>
+                            </li>
+                            <li class="buttons ">
+                                <div>
+
+                                    <input id="saveForm" name="saveForm" class="btTxt submit" type="submit"
+                                        value="Submit" />
+                                </div>
+                            </li>
+
+                            <li class="hide">
+                                <label for="comment">Do Not Fill This Out</label>
+                                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                                <input type="hidden" id="idstamp" name="idstamp"
+                                    value="mkKqKoUNxIhLMAWGORcwS8QZd5cb+O0q57To1QW4nb8=" />
+                                <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 align-self-center">
                 <h3 class="text-light">Formas de pago:</h3>
-                <p class="text-light">Para pagos con tarjetas de crédito o débito usar los siguientes botones</p>
+                <p class="text-light">Para pagos con tarjetas de crédito o débito usar los siguientes botones.</p>
                 <span class="mt-5 text-light">Ingresa la cantidad:</span><br>
-                <input type="number" id="cantidad" class="mb-2">
+                <input placeholder="Cantidad en MXN" type="number" id="cantidad" class="mb-2">
                 <div id="paypal-button-container"></div>
                 <script
-                    src="https://www.paypal.com/sdk/js?client-id=ASIY5h5nptM49_Z0oV120Xs6CvWHgt087NCgrw8ir_8P_K8rW-y5apJnMUCQgpCJp22jdR6ljytIBeLt&currency=MXN"
+                    src="https://www.paypal.com/sdk/js?client-id=ASIY5h5nptM49_Z0oV120Xs6CvWHgt087NCgrw8ir_8P_K8rW-y5apJnMUCQgpCJp22jdR6ljytIBeLt&currency=USD"
                     data-sdk-integration-source="button-factory"></script>
                 <script>
                     var precio = document.getElementById("cantidad").value;
@@ -95,14 +158,17 @@
                         },
                         onApprove: function (data, actions) {
                             return actions.order.capture().then(function (details) {
-                                alert('Pago realizado exitosamente por: ' + details.payer.name.given_name + '!');
+                                alert('Transaction completed by: ' + details.payer.name.given_name + '!');
                             });
                         }
                     }).render('#paypal-button-container');
                 </script>
             </div>
+        </div>
+        <div class="row my-3">
             <div class="col-auto mx-auto">
-                <div id="TA_selfserveprop28" class="TA_selfserveprop mb-3 d-none d-sm-block">
+                <h3 id="rev-h3" class="text-light">Reseñas:</h3>
+                <div id="TA_selfserveprop28" class="TA_selfserveprop mb-3 mb-3 d-none d-md-block">
                     <ul id="qZBspTjd32Eg" class="TA_links NdVppd">
                         <li id="uA8COvTH" class="sbAMPSxQT"><a target="_blank"
                                 href="https://www.tripadvisor.com.mx/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
@@ -114,7 +180,7 @@
                     src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=28&amp;locationId=1032416&amp;lang=es_MX&amp;rating=true&amp;nreviews=4&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
 
-                <div id="TA_selfserveprop276" class="TA_selfserveprop mb-3 d-block d-sm-none">
+                <div id="TA_selfserveprop276" class="TA_selfserveprop mb-3 d-block d-md-none">
                     <ul id="bcMx6Ofuz1" class="TA_links 0PCXcIupen">
                         <li id="6bWyI0b" class="6nxmGDkT"><a target="_blank"
                                 href="https://www.tripadvisor.com.mx/Restaurant_Review-g150809-d1032416-Reviews-Lobster_House_La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
@@ -126,7 +192,8 @@
                     src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=276&amp;locationId=1032416&amp;lang=es_MX&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
             </div>
-            <div class="col-auto mx-auto">
+            <div class="col-auto mx-auto order-lg-first">
+                <h3 id="rev-h3" class="text-light">¡Deja tu reseña!</h3>
                 <script defer
                     src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=215&amp;locationId=1032416&amp;lang=en_US&amp;rating=true&amp;nreviews=4&amp;writereviewlink=false&amp;popIdx=false&amp;iswide=true&amp;border=false&amp;display_version=2"
                     data-loadtrk onload="this.loadtrk=true"></script>
@@ -144,7 +211,6 @@
             </div>
         </div>
     </div>
-
     <div class="card bg-dark px-4">
         <div class="card-body">
             <div class="row p-auto justify-content-around">

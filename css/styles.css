@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
   height: 100%;
@@ -195,6 +198,90 @@ div.col hr.style14 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.item {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 .iframe-rwd {
   position: relative;
   max-width: 1000px;
@@ -210,6 +297,76 @@ div.col hr.style14 {
   padding: 0;
   height: 120px;
   width: 100%;
+}
+.downArrow {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+}
+.bounce {
+  -moz-animation: bounce 3.5s infinite;
+  -webkit-animation: bounce 3.5s infinite;
+  animation: bounce 3.5s infinite;
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 /******************* Larger devices (desktops, 1200px and up) *******************/
 @media (min-width: 1200px) {
@@ -292,6 +449,11 @@ div.col hr.style14 {
     margin-left: 0 !important;
   }
 }
+@media (max-width: 636px) {
+  #info {
+    padding: 25px;
+  }
+}
 
 /******************** Extra small devices (portrait phones, less than 576px) ********************/
 @media (max-width: 575.98px) {
@@ -360,6 +522,12 @@ div.col hr.style14 {
   .menu-text {
     height: 45px;
   }
+  .downArrow {
+    bottom: 25%;
+  }
+  #rev-h3 {
+    font-size: 28px !important;
+  }
 }
 @media (max-width: 520px) {
   #banner,
@@ -369,6 +537,9 @@ div.col hr.style14 {
     background-size: contain;
     background-position: 100% -15%;
     background-repeat: no-repeat;
+  }
+  .downArrow {
+    display: none;
   }
 }
 @media (max-width: 400px) {
@@ -384,11 +555,11 @@ div.col hr.style14 {
   .menu-text-s div span {
     font-size: 14px;
   }
-  #TA_selfserveprop276,
+  /*   #TA_selfserveprop471,
   #TA_cdswritereviewlg503 {
     position: relative;
-    right: 18px !important;
-  }
+        right: 22px !important;
+  } */
 }
 
 @keyframes slideInFromLeft {
