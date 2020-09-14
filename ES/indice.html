@@ -15,7 +15,7 @@
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Caveat&family=Poiret+One&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -23,39 +23,49 @@
 </head>
 
 <body>
-    <div id="banner" class="banner-medio">
-        <nav class=" navbar navbar-expand-sm navbar-dark fixed-top">
+    <div id="banner">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
             <span id="bandera-texto" class="text-white d-none d-sm-block">English:</span>
-            <a id="bandera" href="gallery.html"><img src="img/icons8-usa-48.png" class="img-fluid d-none d-sm-block"
+            <a id="bandera" href="../index.html"><img src="../img/icons8-usa-48.png" class="img-fluid d-none d-sm-block"
                     title="English version" alt="English version"></a>
-            <a href="indice.html" class="navbar-brand d-block d-sm-none">Lobster House</a>
-            <a href="indice.html" class="navbar-brand hvr-glow d-none d-sm-block">Lobster House Grill</a>
+            <a href="#" class="navbar-brand d-block d-sm-none">Lobster House</a>
+            <a href="#" class="navbar-brand hvr-glow d-none d-sm-block">Lobster House Grill</a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto d-flex align-items-center">
-                    <li class="nav-item w-100">
-                        <a class="nav-link text-center" href="indice.html">Sobre Nosotros</a>
+                    <li class="nav-item active w-100">
+                        <a class="nav-link text-center" href="#">Sobre Nosotros<span class="sr-only">(actual)</span></a>
                     </li>
                     <li class="nav-item w-100">
                         <a class="nav-link" href="menu-es.html">Menú</a>
                     </li>
-                    <li class="nav-item active w-100">
-                        <a class="nav-link" href="#">Galería<span class="sr-only">(actual)</span></a>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="galeria.html">Galería</a>
                     </li>
                     <li class="nav-item w-100">
                         <a class="nav-link" href="info-es.html">Info</a>
                     </li>
                     <li class="nav-item d-sm-none w-100">
-                        <a class="nav-link" href="gallery.html">English version <img src="img/icons8-usa-48.png"
+                        <a class="nav-link" href="../index.html">English version <img src="img/icons8-usa-48.png"
                                 height="30px" class="mb-2" alt="English version"></a>
                     </li>
                 </ul>
             </div>
         </nav>
-
+        <a href="#open">
+            <div class="downArrow bounce">
+                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    <path fill-rule="evenodd"
+                        d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+        </a>
         <span id="open">
             <h4>Abierto cada noche: <br class="d-block d-sm-none"> 5:30pm a 10:30pm</h4>
         </span>
@@ -72,39 +82,52 @@
             src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=371&amp;locationId=1032416&amp;lang=es_MX&amp;year=2020&amp;display_version=2"
             data-loadtrk onload="this.loadtrk=true"></script> -->
     </div>
-
-    <h2 class="text-light text-center mt-4 display-4" style="font-weight: 450;">Galería</h2>
-
-    <div class="container-principal">
-        <div class="grid">
-            <img class="item" src="img/Fachada_restaurante-KLP.JPG" alt="">
-
-            <img class="item" src="img/IMG_0248.JPG" alt="">
-
-            <img class="item" src="img/Lampara_estrella.JPG" alt="">
-
-            <img class="item" src="img/Entrada.JPG" alt="">
-
-            <img class="item" src="img/Comedor_atras_2.JPG" alt="">
+    <div class=" container-fluid mb-5 container-menu">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center text-light display-4">Lobster House: <br class="d-block d-sm-none"> La Cabaña
+                    <br class="d-none d-sm-block d-lg-none">
+                    del Pescador Grill</h1>
+                <hr class="mb-5 bg-light style14">
+            </div>
         </div>
-
-        <div class="grid" style="position: relative; bottom: 15px;">
-            <img class="item" src="img/Entrada_puentecito.JPG" alt="">
-
-            <img class="item" src="img/Comedor_afuera.JPG" alt="">
-
-            <img class="item" src="img/Fachada-comedor-atras.jpg" alt="">
-
-            <img class="item" src="img/IMG_0243.JPG" alt="">
-
-            <img class="item" src="img/pay.JPG" alt="">
+        <div class="row about-us">
+            <div class="col-md-7 col-sm-6 col-xs-4 text-light">
+                <h2 style="font-size: 2.3rem;">Sobre nosotros:</h2>
+                <p class="lead text-justify">Somos un pequeño restaurante familiar que comenzó a principios de la década
+                    de los 70 en la isla de Cozumel sirviendo
+                    mariscos frescos de la más alta calidad. Desde entonces, nos hemos convertido en un restaurante
+                    ampliamente reconocido
+                    en la isla.
+                </p> <br>
+                <p class="lead text-justify d-none d-md-block">En nuestro restaurante, tratamos de mantener el ambiente
+                    de la isla para que se sienta verdaderamente en una tradicional
+                    isla del Caribe, con un escenario perfecto para ocasiones románticas o para toda la familia. Sin
+                    embargo, cada día
+                    hacemos todo lo posible para ofrecer la mejor experiencia posible a nuestros clientes, tratando de
+                    mejorar
+                    constantemente en todos los sentidos.<br>
+                    <b><em>Atentamente, su anfitrión, Enrique.</em></b>
+                </p>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-8 align-self-center">
+                <img class="img-fluid align-self-center mb-4" src="../img/Fachada-comedor-atras.jpg" alt="">
+            </div>
         </div>
-    </div>
-
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content position-relative" id="img01">
-        <div id="caption"></div>
+        <div class="row about-us">
+            <div class="col">
+                <p class="lead d-block d-md-none text-light text-justify">En nuestro restaurante, tratamos de mantener
+                    el ambiente
+                    de la isla para que se sienta verdaderamente en una tradicional
+                    isla del Caribe, con un escenario perfecto para ocasiones románticas o para toda la familia. Sin
+                    embargo, cada día
+                    hacemos todo lo posible para ofrecer la mejor experiencia posible a nuestros clientes, tratando de
+                    mejorar
+                    constantemente en todos los sentidos.<br>
+                    <b><em>Atentamente, su anfitrión, Enrique.</em></b>
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="card bg-dark px-4">
@@ -126,7 +149,7 @@
                     class="col-xs-12 col-sm-auto order-xs-last order-sm-2 d-flex justify-content-sm-end justify-content-around mb-3">
                     <a title="Check our Facebook page!" class="p-4 d-none d-sm-block" target="_blank"
                         href="https://www.facebook.com/La-Caba%C3%B1a-del-Pescador-580200778727179/?_rdc=1&_rdr"><img
-                            src="img/iconfinder_Facebook_194929.png" class="" alt="Facebook Page"></a>
+                            src="../img/iconfinder_Facebook_194929.png" class="" alt="Facebook Page"></a>
 
                     <div id="TA_cdsratingsonlynarrow591" class="TA_cdsratingsonlynarrow d-none d-sm-block">
                         <ul id="ZWkXWjnu6C6x" class="TA_links ncu564j">
@@ -143,17 +166,17 @@
 
                     <a title="Check our Facebook page!" class="p-4 d-block d-sm-none" target="_blank"
                         href="https://www.facebook.com/La-Caba%C3%B1a-del-Pescador-580200778727179/?_rdc=1&_rdr"><img
-                            src="img/icons8-facebook-24_movil.png" class="" alt="Facebook Page"></a>
+                            src="../img/icons8-facebook-24_movil.png" class="" alt="Facebook Page"></a>
 
                     <a title="Rate us on Tripadvisor!" class="p-4 d-block d-sm-none" target="_blank"
                         href="https://www.tripadvisor.com/Restaurant_Review-g150809-d1032416-Reviews-La_Cabana_del_Pescador-Cozumel_Yucatan_Peninsula.html"><img
-                            src="img/icons8-tripadvisor-96-movil.png" class="" alt="Tripadvisor page"></a>
+                            src="../img/icons8-tripadvisor-96-movil.png" class="" alt="Tripadvisor page"></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
