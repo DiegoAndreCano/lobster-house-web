@@ -2,7 +2,7 @@ https://lobsterhousecozumel.com/index.html
 https://lobsterhousecozumel.com/menu.html
 https://lobsterhousecozumel.com/gallery.html
 https://lobsterhousecozumel.com/info.html
-https://lobsterhousecozumel.com/indice.html
-https://lobsterhousecozumel.com/menu-es.html
-https://lobsterhousecozumel.com/galeria.html
-https://lobsterhousecozumel.com/info-es.html
+https://lobsterhousecozumel.com/ES/indice.html
+https://lobsterhousecozumel.com/ES/menu.html
+https://lobsterhousecozumel.com/ES/galeria.html
+https://lobsterhousecozumel.com/ES/info.html
